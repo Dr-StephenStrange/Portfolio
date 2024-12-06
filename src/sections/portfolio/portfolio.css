@@ -18,7 +18,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .card.portfolio__project {
@@ -56,6 +56,10 @@
   opacity: 1;
   pointer-events: auto;
   transition: opacity 0.3s ease;
+  flex-grow: 1; /* Ensures consistent height between cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .portfolio__project-details.hidden {
@@ -66,18 +70,39 @@
 .portfolio__project-cta {
   display: flex;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
-.portfolio__project:hover .btn.sm {
-  border-color: var(--color-white);
+/* Demo Button Styling */
+.portfolio__project .btn.sm {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--border-radius-2);
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: var(--transition);
 }
 
-.portfolio__project:hover .btn.sm.primary {
-  background: transparent;
+.portfolio__project .btn.sm:hover {
+  background: var(--color-light);
   color: var(--color-primary);
-  border-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
 
+/* Github Button Styling */
+.portfolio__project .btn.sm.primary {
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.portfolio__project .btn.sm.primary:hover {
+  background: transparent;
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+}
+
+/* NDA message */
 .portfolio__project-nda {
   font-size: 0.9rem;
   color: #777; /* Subtle gray to indicate secondary information */
@@ -217,4 +242,3 @@
 .portfolio__project-technologies strong {
   color: var(--color-primary); /* Highlight "Technologies Used" in primary color */
 }
-

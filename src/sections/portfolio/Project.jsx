@@ -43,6 +43,38 @@ const Project = ({ project }) => {
         <p className="portfolio__project-technologies">
           <strong>Technologies Used:</strong> {project.technologies}
         </p>
+
+        {/* Demo and Github Buttons */}
+        <div className="portfolio__project-cta">
+          {project.demo && (
+            <a
+              href={project.demo}
+              className="btn sm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Demo
+            </a>
+          )}
+
+          {project.github && (
+            <a
+              href={project.github}
+              className="btn sm primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
+          )}
+
+          {/* NDA message only if both links are missing */}
+          {!project.demo && !project.github && (
+            <p className="portfolio__project-nda">
+              * NDA in place, code not available
+            </p>
+          )}
+        </div>
       </div>
 
       {/* Modal */}
