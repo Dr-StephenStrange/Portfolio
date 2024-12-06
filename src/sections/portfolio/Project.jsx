@@ -4,33 +4,44 @@ import { FaExpandAlt, FaTimes } from "react-icons/fa";
 
 const Project = ({ project }) => {
   const [showModal, setShowModal] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
 
-  const openModal = () => setShowModal(true);
+  const openModal = () => {
+    document.body.classList.add("modal-open"); // Add class to body
+    setShowModal(true);
+  };
+
   const closeModal = () => {
+    document.body.classList.remove("modal-open"); // Remove class from body
     setShowModal(false);
-    setCurrentImageIndex(0); // Reset to the first image when closing
+    setCurrentMediaIndex(0); // Reset to the first media when closing
   };
 
-  const showNextImage = (e) => {
+  const showNextMedia = (e) => {
     e.stopPropagation();
-    setCurrentImageIndex((prevIndex) =>
-      (prevIndex + 1) % project.images.length
+    setCurrentMediaIndex((prevIndex) =>
+      (prevIndex + 1) % project.media.length
     );
   };
 
-  const showPrevImage = (e) => {
+  const showPrevMedia = (e) => {
     e.stopPropagation();
-    setCurrentImageIndex((prevIndex) =>
-      (prevIndex - 1 + project.images.length) % project.images.length
+    setCurrentMediaIndex((prevIndex) =>
+      (prevIndex - 1 + project.media.length) % project.media.length
     );
   };
+
+  const currentMedia = project.media[currentMediaIndex];
 
   return (
     <Card className="portfolio__project">
-      {/* Project Image */}
+      {/* Project Image or Video */}
       <div className="portfolio__project-image" onClick={openModal}>
-        <img src={project.images[0]} alt={project.title} />
+        {currentMedia.type === "image" ? (
+          <img src={currentMedia.src} alt={project.title} />
+        ) : (
+          <video src={currentMedia.src} controls={false} />
+        )}
         <FaExpandAlt className="expand-icon" />
       </div>
 
@@ -81,14 +92,18 @@ const Project = ({ project }) => {
       {showModal && (
         <div className="modal" onClick={closeModal}>
           <div className="modal-content">
-            <img
-              src={project.images[currentImageIndex]}
-              alt={`${project.title} - ${currentImageIndex + 1}`}
-            />
-            <button className="modal-nav prev" onClick={showPrevImage}>
+            {currentMedia.type === "image" ? (
+              <img
+                src={currentMedia.src}
+                alt={`${project.title} - ${currentMediaIndex + 1}`}
+              />
+            ) : (
+              <video src={currentMedia.src} controls autoPlay />
+            )}
+            <button className="modal-nav prev" onClick={showPrevMedia}>
               ◀
             </button>
-            <button className="modal-nav next" onClick={showNextImage}>
+            <button className="modal-nav next" onClick={showNextMedia}>
               ▶
             </button>
             <FaTimes className="close-icon" onClick={closeModal} />

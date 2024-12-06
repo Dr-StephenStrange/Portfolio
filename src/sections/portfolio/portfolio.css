@@ -112,17 +112,21 @@
 
 /* Modal Styling */
 .modal {
-  position: absolute;
+  position: fixed; /* Prevent scrolling behind modal */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Slight overlay effect */
+  background: rgba(255, 255, 255, 0.95); /* Solid white background with slight opacity */
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
   border-radius: 8px;
+}
+
+body.modal-open {
+  overflow: hidden; /* Disable scrolling on body when modal is open */
 }
 
 .modal-content {
@@ -133,10 +137,11 @@
   overflow: hidden; /* Ensure content fits properly */
 }
 
-.modal-content img {
+.modal-content img,
+.modal-content video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Scale the image proportionally */
+  object-fit: contain; /* Ensures video fits within dimensions */
   border-radius: 8px;
 }
 
