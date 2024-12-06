@@ -1,0 +1,220 @@
+.portfolio__categories {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn.cat__btn {
+  transition: var(--transition);
+}
+
+.btn.cat__btn:hover {
+  transform: translateY(0);
+}
+
+.portfolio__projects {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+.card.portfolio__project {
+  animation: animateProject 800ms ease-in forwards;
+  position: relative;
+  overflow: hidden; /* Ensure the modal and content stay within the card */
+}
+
+@keyframes animateProject {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.portfolio__project-image {
+  width: 100%;
+  height: fit-content;
+  min-height: 7rem;
+  max-height: 15rem;
+  background: var(--color-light);
+  border-radius: var(--border-radius-2);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.portfolio__project p {
+  margin: 0.5rem 0 2rem;
+}
+
+.portfolio__project-details {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio__project-details.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.portfolio__project-cta {
+  display: flex;
+  gap: 1rem;
+}
+
+.portfolio__project:hover .btn.sm {
+  border-color: var(--color-white);
+}
+
+.portfolio__project:hover .btn.sm.primary {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.portfolio__project-nda {
+  font-size: 0.9rem;
+  color: #777; /* Subtle gray to indicate secondary information */
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+/* Modal Styling */
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Slight overlay effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  border-radius: 8px;
+}
+
+.modal-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden; /* Ensure content fits properly */
+}
+
+.modal-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Scale the image proportionally */
+  border-radius: 8px;
+}
+
+/* Navigation Buttons */
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #333;
+  z-index: 20;
+  transition: background 0.3s ease;
+}
+
+.modal-nav:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.modal-nav.prev {
+  left: 10px; /* Left-side button */
+}
+
+.modal-nav.next {
+  right: 10px; /* Right-side button */
+}
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+  .portfolio__projects {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+  .portfolio__categories {
+    gap: 0.6rem;
+  }
+
+  .btn.cat__btn {
+    padding: 0.7rem 0.8rem;
+  }
+
+  .portfolio__projects {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Expand Icon (on project image) */
+.expand-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 5;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.expand-icon:hover {
+  color: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Close Icon (inside modal) */
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  z-index: 30; /* Ensure it sits above all other modal content */
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.close-icon:hover {
+  color: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Technologies Used Section */
+.portfolio__project-technologies {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-dark); /* Use a darker shade for better contrast */
+}
+
+.portfolio__project-technologies strong {
+  color: var(--color-primary); /* Highlight "Technologies Used" in primary color */
+}
+
