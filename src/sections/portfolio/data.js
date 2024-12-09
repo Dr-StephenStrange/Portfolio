@@ -3,6 +3,9 @@ import Image2 from "../../assets/Minibuoy.jpg";
 import Image3 from "../../assets/Minibuoy3.jpg";
 import Video1 from "../../assets/HeartbeatVideo2.mp4";
 import Image4 from "../../assets/Ultrasound.jpg";
+import Image5 from "../../assets/CoastVal1.jpg";
+import Image6 from "../../assets/CoastVal2.jpg";
+import Image7 from "../../assets/CoastVal3.jpg";
 
 const data = [
   {
@@ -32,6 +35,20 @@ const data = [
     github: "",
     technologies: "Python, Image Analysis, Audacity",
   },
+  {
+    id: 3,
+    category: "IoT / Embedded Systems",
+    media: [
+      { type: "image", src: Image5 },
+      { type: "image", src: Image6 },
+      { type: "image", src: Image7 },
+    ],
+    title: "CoastVAL - Sentinel 2/3 Validation Project",
+    desc: "Developed and deployed a buoy platform for validating satellite ocean color data products in coastal high-latitude waters. The system incorporated multi-sensor sampling, solar power, and data telemetry, achieving 98% data availability. Contributions included wiring electronics, solar panels, and programming multithreaded Python scripts for high-frequency sensor sampling and data processing.",
+    demo: "", 
+    github: "", 
+    technologies: "Python (Multithreading), Shell Scripts, Electronics",
+},
 ];
 
 export default data;
