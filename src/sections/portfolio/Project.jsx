@@ -79,8 +79,8 @@ const Project = ({ project }) => {
             </a>
           )}
 
-          {/* NDA message only if both links are missing */}
-          {!project.demo && !project.github && (
+          {/* NDA message only if both links are missing and category is not "Personal" */}
+          {!project.demo && !project.github && project.category !== "Personal" && (
             <p className="portfolio__project-nda">
               * NDA in place, code not available
             </p>

@@ -6,6 +6,13 @@ import Image4 from "../../assets/Ultrasound.jpg";
 import Image5 from "../../assets/CoastVal1.jpg";
 import Image6 from "../../assets/CoastVal2.jpg";
 import Image7 from "../../assets/CoastVal3.jpg";
+import Image8 from "../../assets/Heilung.jpg";
+import Image9 from "../../assets/Dave Grohl.jpg";
+import Image10 from "../../assets/Gandalf.jpg";
+import Image11 from "../../assets/Robin Williams.jpg";
+import Image12 from "../../assets/Bob Marley.jpg";
+import Image13 from "../../assets/Heisenberg.jpg";
+import Image14 from "../../assets/Ted Lasso.png";
 
 const data = [
   {
@@ -48,6 +55,24 @@ const data = [
     demo: "", 
     github: "", 
     technologies: "Python (Multithreading), Shell Scripts, Electronics",
+},
+{
+  id: 4,
+  category: "Personal",
+  media: [
+    { type: "image", src: Image8 },
+    { type: "image", src: Image9 },
+    { type: "image", src: Image10 },
+    { type: "image", src: Image11 },
+    { type: "image", src: Image12 },
+    { type: "image", src: Image13 },
+    { type: "image", src: Image14 },
+  ],
+  title: "Art",
+  desc: "Although not professionally relevant, my art demonstrates my broader interests and highlights my creativity, which I bring to everything I do. My journey with art was reawakened during the pandemic and now most of my art is done digitally. Each piece reflects a story, emotion, or a technique I honed over time.",
+  demo: "", 
+  github: "", 
+  technologies: "Procreate, Good Ol'Fashioned Pencil and Paper",
 },
 ];
 
