@@ -14,6 +14,10 @@ import Image12 from "../../assets/Bob Marley.jpg";
 import Image13 from "../../assets/Heisenberg.jpg";
 import Image14 from "../../assets/Ted Lasso.png";
 import Paper1 from "../../assets/Paper.pdf";
+import Image15 from "../../assets/SimpsonsPredictions.png";
+import Image16 from "../../assets/SimpsonsPredictions2.png";
+import Image17 from "../../assets/ConfusionMatrix.png";
+
 
 const data = [
   {
@@ -77,19 +81,20 @@ const data = [
 },
 {
   id: 5,
-  category: "AI/ML",
+  category: "Personal",
   media: [
-    {
-      type: "image",
-      src: Image9, 
-    },
+    { type: "image", src: Image15 },
+    { type: "image", src: Image16 },
+    { type: "image", src: Image17 },
   ],
-  title: "Simpsons Character Classifier",
-  desc: "A convolutional neural network (CNN) model for classifying Simpsons characters from images.",
+  title: "Simpsons Character Classifier using CNN Model",
+  desc: "This project demonstrates a convolutional neural network (CNN) model trained to classify Simpsons characters from images. The CNN architecture was designed with multiple convolutional, pooling, and dense layers to achieve a high level of accuracy in character recognition tasks.",
   demo: "https://simpsons-cnn.onrender.com/",
+  link: "https://github.com/Dr-StephenStrange/Simpsons-Neural-Network",
   paper: Paper1,
-  technologies: "Python, TensorFlow, Keras, Gradio",
-},
+  technologies: "Python, TensorFlow, Keras, Gradio, Spark",
+}
+
 ];
 
 export default data;

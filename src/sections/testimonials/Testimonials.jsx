@@ -1,17 +1,23 @@
+// Testimonials.jsx
+
+import React from "react";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper";
 
-// Import Swiper styles
+// Import Swiper modules
+import { Autoplay, Pagination } from "swiper/modules";
+
+// Import Swiper and related styles
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import "swiper/css/pagination";
 
-// import required modules
-import { Pagination } from "swiper";
-
+// Import your data and component
 import data from "./data";
 import Testimonial from "./Testimonial";
+
+// Import your custom styling
 import "./testimonials.css";
 
 const Testimonials = () => {
@@ -27,11 +33,9 @@ const Testimonials = () => {
             601: { slidesPerView: 2 },
             1025: { slidesPerView: 3 },
           }}
-          pagination={{
-            clickable: true,
-          }}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 2500 }}
           modules={[Pagination, Autoplay]}
-          autoplay={true}
           className="mySwiper"
         >
           {data.map((testimonial) => (
