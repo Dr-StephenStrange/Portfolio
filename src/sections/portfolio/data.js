@@ -88,7 +88,7 @@ const data = [
     { type: "image", src: Image17 },
   ],
   title: "Simpsons Character Classifier using CNN Model",
-  desc: "This project demonstrates a convolutional neural network (CNN) model trained to classify Simpsons characters from images. The CNN architecture was designed with multiple convolutional, pooling, and dense layers to achieve a high level of accuracy in character recognition tasks.",
+  desc: "This project demonstrates a convolutional neural network (CNN) model trained to classify Simpsons characters from images. The CNN architecture was designed with multiple convolutional, pooling, and dense layers to achieve a high level of accuracy (91%) in character recognition tasks. This was part of a wider project as part of my Masters in CCT, the project also featured a demonstration of the capabilites of Spark to process data efficiently.",
   demo: "https://simpsons-cnn.onrender.com/",
   link: "https://github.com/Dr-StephenStrange/Simpsons-Neural-Network",
   paper: Paper1,
