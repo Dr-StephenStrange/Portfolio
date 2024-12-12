@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ae8bec28.css",
-    "main.js": "/static/js/main.f194d6a3.js",
+    "main.js": "/static/js/main.06677ce8.js",
     "static/media/HeartbeatVideo2.mp4": "/static/media/HeartbeatVideo2.31fdfada7f7271258936.mp4",
     "static/media/Ted Lasso.png": "/static/media/Ted Lasso.76171aeabbf23be61357.png",
     "static/media/Dave Grohl.jpg": "/static/media/Dave Grohl.1961371266e1cede26cd.jpg",
@@ -14,7 +14,7 @@
     "static/media/Bob Marley.jpg": "/static/media/Bob Marley.651c90f4cd40e0895d61.jpg",
     "static/media/SimpsonsPredictions2.png": "/static/media/SimpsonsPredictions2.7bd84536132fcb591132.png",
     "static/media/Paper.pdf": "/static/media/Paper.5d9df0e551e15166d26c.pdf",
-    "static/media/cv.pdf": "/static/media/cv.1bb71425c2a6e4a8e2a9.pdf",
+    "static/media/cv.pdf": "/static/media/cv.e69a8d603b0d007bb99e.pdf",
     "static/media/Minibuoy2.jpg": "/static/media/Minibuoy2.0ff317b1f169ab17025d.jpg",
     "static/media/header.jpg": "/static/media/header.30efc8c4393e94ad30c7.jpg",
     "static/media/Minibuoy3.jpg": "/static/media/Minibuoy3.c57a86bf5c6c14836f80.jpg",
@@ -25,10 +25,10 @@
     "static/media/Ultrasound.jpg": "/static/media/Ultrasound.e744094c947c0a3222f6.jpg",
     "index.html": "/index.html",
     "main.ae8bec28.css.map": "/static/css/main.ae8bec28.css.map",
-    "main.f194d6a3.js.map": "/static/js/main.f194d6a3.js.map"
+    "main.06677ce8.js.map": "/static/js/main.06677ce8.js.map"
   },
   "entrypoints": [
     "static/css/main.ae8bec28.css",
-    "static/js/main.f194d6a3.js"
+    "static/js/main.06677ce8.js"
   ]
 }
