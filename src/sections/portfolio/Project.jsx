@@ -55,7 +55,7 @@ const Project = ({ project }) => {
           <strong>Technologies Used:</strong> {project.technologies}
         </p>
 
-        {/* Demo and Github Buttons */}
+        {/* Demo and Paper Buttons */}
         <div className="portfolio__project-cta">
           {project.demo && (
             <a
@@ -68,23 +68,26 @@ const Project = ({ project }) => {
             </a>
           )}
 
-          {project.github && (
+          {project.paper && (
             <a
-              href={project.github}
-              className="btn sm primary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-            </a>
+            href={project.paper}
+            className="btn sm paper"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+          >
+            Paper
+          </a>
           )}
 
           {/* NDA message only if both links are missing and category is not "Personal" */}
-          {!project.demo && !project.github && project.category !== "Personal" && (
-            <p className="portfolio__project-nda">
-              * NDA in place, code not available
-            </p>
-          )}
+          {!project.demo &&
+            !project.paper &&
+            project.category !== "Personal" && (
+              <p className="portfolio__project-nda">
+                * NDA in place, code not available
+              </p>
+            )}
         </div>
       </div>
 

@@ -10,14 +10,14 @@ import Footer from "./sections/footer/Footer";
 import FloatingNav from "./sections/floating-nav/FloatingNav";
 import Theme from "./theme/Theme";
 import { useThemeContext } from "./context/theme-context";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 
 const App = () => {
   const { themeState } = useThemeContext();
 
   const mainRef = useRef();
   const [showFloatingNav, setShowFloatingNav] = useState(true);
-  const [siteYPostion, setSiteYPosition] = useState(0);
+  const [siteYPosition, setSiteYPosition] = useState(0);
 
   const showFloatingNavHandler = () => {
     setShowFloatingNav(true);
@@ -28,11 +28,11 @@ const App = () => {
   };
 
   // check if floating nav should be shown or hidden
-  const floatingNavToggleHandler = () => {
+  const floatingNavToggleHandler = useCallback(() => {
     // check if we scrolled up or down at least 20px
     if (
-      siteYPostion < mainRef?.current?.getBoundingClientRect().y - 20 ||
-      siteYPostion > mainRef?.current?.getBoundingClientRect().y + 20
+      siteYPosition < mainRef?.current?.getBoundingClientRect().y - 20 ||
+      siteYPosition > mainRef?.current?.getBoundingClientRect().y + 20
     ) {
       showFloatingNavHandler();
     } else {
@@ -40,14 +40,14 @@ const App = () => {
     }
 
     setSiteYPosition(mainRef?.current?.getBoundingClientRect().y);
-  };
+  }, [siteYPosition]); // Dependency array includes only variables used inside
 
   useEffect(() => {
     const checkYPosition = setInterval(floatingNavToggleHandler, 2000);
 
     // cleanup function
     return () => clearInterval(checkYPosition);
-  }, [siteYPostion]);
+  }, [floatingNavToggleHandler]); // Add the handler as a dependency
 
   return (
     <main

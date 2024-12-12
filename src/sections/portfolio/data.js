@@ -13,6 +13,7 @@ import Image11 from "../../assets/Robin Williams.jpg";
 import Image12 from "../../assets/Bob Marley.jpg";
 import Image13 from "../../assets/Heisenberg.jpg";
 import Image14 from "../../assets/Ted Lasso.png";
+import Paper1 from "../../assets/Paper.pdf";
 
 const data = [
   {
@@ -26,7 +27,7 @@ const data = [
     title: "Minibuoy - Techworks Marine",
     desc: "Designed and developed a portable IoT-enabled environmental monitoring system, Minibuoy, to collect and transmit real-time marine data. The project included embedded systems design, sensor integration, and data visualization to aid scientific research and environmental management.",
     demo: "",
-    github: "",
+    link: "",
     technologies: "MicroPython, AWS IoT Core, MQTT, DynamoDB, Custom Hardware",
   },
   {
@@ -39,7 +40,7 @@ const data = [
     title: "Heartbeat Audio Generation - Fiverr",
     desc: "When my partner was pregnant, we had our first scan and discovered that some hospitals have policies prohibiting video recordings of the ultrasound. Determined to preserve that special memory, I worked on extracting the audio waveform and used my technical expertise to recreate the heartbeat audio. Realizing that many others could benefit from this, I launched a Fiverr gig. Since then, I’ve helped dozens of clients relive this cherished moment, creating lasting memories for families around the world.",
     demo: "https://www.fiverr.com/doctorrobot/turn-your-ultrasound-picture-into-an-audio-heartbeat",
-    github: "",
+    link: "",
     technologies: "Python, Image Analysis, Audacity",
   },
   {
@@ -53,7 +54,7 @@ const data = [
     title: "CoastVAL - Sentinel 2/3 Validation Project",
     desc: "Developed and deployed a buoy platform for validating satellite ocean color data products in coastal high-latitude waters. The system incorporated multi-sensor sampling, solar power, and data telemetry, achieving 98% data availability. Contributions included wiring electronics, solar panels, and programming multithreaded Python scripts for high-frequency sensor sampling and data processing.",
     demo: "", 
-    github: "", 
+    link: "", 
     technologies: "Python (Multithreading), Shell Scripts, Electronics",
 },
 {
@@ -71,8 +72,23 @@ const data = [
   title: "Art",
   desc: "Although not professionally relevant, my art demonstrates my broader interests and highlights my creativity, which I bring to everything I do. My journey with art was reawakened during the pandemic and now most of my art is done digitally. Each piece reflects a story, emotion, or a technique I honed over time.",
   demo: "", 
-  github: "", 
+  link: "", 
   technologies: "Procreate, Good Ol'Fashioned Pencil and Paper",
+},
+{
+  id: 5,
+  category: "AI/ML",
+  media: [
+    {
+      type: "image",
+      src: Image9, 
+    },
+  ],
+  title: "Simpsons Character Classifier",
+  desc: "A convolutional neural network (CNN) model for classifying Simpsons characters from images.",
+  demo: "https://simpsons-cnn.onrender.com/",
+  paper: Paper1,
+  technologies: "Python, TensorFlow, Keras, Gradio",
 },
 ];
 

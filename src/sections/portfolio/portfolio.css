@@ -90,7 +90,7 @@
   border: 1px solid var(--color-primary);
 }
 
-/* Github Button Styling */
+/* link Button Styling */
 .portfolio__project .btn.sm.primary {
   background: var(--color-secondary);
   color: var(--color-white);
@@ -246,4 +246,20 @@ body.modal-open {
 
 .portfolio__project-technologies strong {
   color: var(--color-primary); /* Highlight "Technologies Used" in primary color */
+}
+
+.portfolio__project .btn.sm.paper {
+  background: var(--color-primary); /* Matches other buttons */
+  color: var(--color-white);
+  border-radius: var(--border-radius-2);
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.portfolio__project .btn.sm.paper:hover {
+  background: var(--color-light);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
