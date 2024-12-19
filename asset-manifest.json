@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.ae8bec28.css",
-    "main.js": "/static/js/main.0bb5c5ee.js",
+    "main.js": "/static/js/main.1e13155a.js",
     "static/media/HeartbeatVideo2.mp4": "/static/media/HeartbeatVideo2.31fdfada7f7271258936.mp4",
     "static/media/Ted Lasso.png": "/static/media/Ted Lasso.76171aeabbf23be61357.png",
+    "static/media/AutocadScraper.png": "/static/media/AutocadScraper.ff5c7125006f01414b66.png",
     "static/media/Dave Grohl.jpg": "/static/media/Dave Grohl.1961371266e1cede26cd.jpg",
     "static/media/Gandalf.jpg": "/static/media/Gandalf.5ccc16b7dcd0f07ea6f6.jpg",
     "static/media/Heisenberg.jpg": "/static/media/Heisenberg.9175a95c99dcd9c57134.jpg",
@@ -13,9 +14,14 @@
     "static/media/Heilung.jpg": "/static/media/Heilung.23956f9e25464c1160e1.jpg",
     "static/media/Bob Marley.jpg": "/static/media/Bob Marley.651c90f4cd40e0895d61.jpg",
     "static/media/SimpsonsPredictions2.png": "/static/media/SimpsonsPredictions2.7bd84536132fcb591132.png",
+    "static/media/ScheduleBI.png": "/static/media/ScheduleBI.fd237b1333f8fb4eeb5d.png",
+    "static/media/Issue Tracker.png": "/static/media/Issue Tracker.32b6d8c4d027a228f38e.png",
+    "static/media/Schedule Validation.png": "/static/media/Schedule Validation.63f701682c3a8a6f3e93.png",
     "static/media/Paper.pdf": "/static/media/Paper.5d9df0e551e15166d26c.pdf",
     "static/media/cv.pdf": "/static/media/cv.e69a8d603b0d007bb99e.pdf",
     "static/media/Minibuoy2.jpg": "/static/media/Minibuoy2.0ff317b1f169ab17025d.jpg",
+    "static/media/Autocad Drawing.png": "/static/media/Autocad Drawing.9673331b210a6984874a.png",
+    "static/media/Tool Components.png": "/static/media/Tool Components.82bd85bfdc2f4f42d7db.png",
     "static/media/header.jpg": "/static/media/header.30efc8c4393e94ad30c7.jpg",
     "static/media/Minibuoy3.jpg": "/static/media/Minibuoy3.c57a86bf5c6c14836f80.jpg",
     "static/media/CoastVal2.jpg": "/static/media/CoastVal2.02dade8fa9c8dfa0a7d1.jpg",
@@ -23,12 +29,14 @@
     "static/media/ConfusionMatrix.png": "/static/media/ConfusionMatrix.9e6b55250b08342eb227.png",
     "static/media/about.jpg": "/static/media/about.7df2b44b73771768d16e.jpg",
     "static/media/Ultrasound.jpg": "/static/media/Ultrasound.e744094c947c0a3222f6.jpg",
+    "static/media/Schedule Example.png": "/static/media/Schedule Example.e7e36c5e64b2780feb2a.png",
+    "static/media/ScheduleBIProcess.png": "/static/media/ScheduleBIProcess.18c186fc31b606fd66e6.png",
     "index.html": "/index.html",
     "main.ae8bec28.css.map": "/static/css/main.ae8bec28.css.map",
-    "main.0bb5c5ee.js.map": "/static/js/main.0bb5c5ee.js.map"
+    "main.1e13155a.js.map": "/static/js/main.1e13155a.js.map"
   },
   "entrypoints": [
     "static/css/main.ae8bec28.css",
-    "static/js/main.0bb5c5ee.js"
+    "static/js/main.1e13155a.js"
   ]
 }
