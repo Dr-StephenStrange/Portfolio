@@ -35,8 +35,7 @@ const Header = () => {
           <p>
           A data analyst with expertise in computer engineering, system design, and project
           management. My diverse skill set allows me to blend technology with innovative thinking, 
-          delivering solutions that drive innovation. Outside work, I’m a passionate digital artist, bringing creativity
-          into every aspect of my life.
+          creativity, and a dash of people skills.
           </p>
           <a href="#contact" className="btn primary">
             Let's Talk
