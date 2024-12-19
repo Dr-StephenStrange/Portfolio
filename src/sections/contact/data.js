@@ -1,15 +1,19 @@
 import { HiOutlineMail } from "react-icons/hi";
-import { FaLinkedinIn } from "react-icons/fa"; // Using LinkedIn icon
-//import { FaWhatsapp } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa"; 
 
 const data = [
   { id: 1, icon: <HiOutlineMail />, link: "mailto:glenntarpey@gmail.com" },
   {
     id: 2,
-    icon: <FaLinkedinIn />, // LinkedIn icon
+    icon: <FaLinkedinIn />,
     link: "https://www.linkedin.com/in/glenntarpey/",
   },
-  //{ id: 3, icon: <FaWhatsapp />, link: "https://wa.me/+353863997169" },
+  {
+    id: 3,
+    icon: <FaGithub />,
+    link: "https://github.com/Dr-StephenStrange",
+  },
 ];
 
 export default data;
+
