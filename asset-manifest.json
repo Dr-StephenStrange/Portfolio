@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ae8bec28.css",
-    "main.js": "/static/js/main.1e13155a.js",
+    "main.js": "/static/js/main.b1eca0f2.js",
     "static/media/HeartbeatVideo2.mp4": "/static/media/HeartbeatVideo2.31fdfada7f7271258936.mp4",
     "static/media/Ted Lasso.png": "/static/media/Ted Lasso.76171aeabbf23be61357.png",
     "static/media/AutocadScraper.png": "/static/media/AutocadScraper.ff5c7125006f01414b66.png",
@@ -33,10 +33,10 @@
     "static/media/ScheduleBIProcess.png": "/static/media/ScheduleBIProcess.18c186fc31b606fd66e6.png",
     "index.html": "/index.html",
     "main.ae8bec28.css.map": "/static/css/main.ae8bec28.css.map",
-    "main.1e13155a.js.map": "/static/js/main.1e13155a.js.map"
+    "main.b1eca0f2.js.map": "/static/js/main.b1eca0f2.js.map"
   },
   "entrypoints": [
     "static/css/main.ae8bec28.css",
-    "static/js/main.1e13155a.js"
+    "static/js/main.b1eca0f2.js"
   ]
 }
