@@ -93,7 +93,7 @@ const data = [
       { type: "image", src: Image3 }
     ],
     title: "Minibuoy - Techworks Marine",
-    desc: "Designed and developed a portable IoT-enabled environmental monitoring system, Minibuoy, to collect and transmit real-time marine data. The project included embedded systems design, sensor integration, and data visualization to aid scientific research and environmental management.",
+    desc: "Designed and developed a portable IoT-enabled environmental monitoring system, Minibuoy, to collect and transmit real-time marine data. The project included embedded systems design, sensor integration, and data visualization to aid scientific research and environmental management. <br> This involved a series of complex MicroPython packages, running everything from individual sensor drivers, data sampling, power control and transmission of data via MQTT over the 4G network",
     demo: "",
     link: "",
     technologies: "MicroPython, AWS IoT Core, MQTT, DynamoDB, SQL, Custom Hardware"
