@@ -48,7 +48,7 @@ const Project = ({ project }) => {
       {/* Project Title and Description */}
       <div className={`portfolio__project-details ${showModal ? "hidden" : ""}`}>
         <h4>{project.title}</h4>
-        <p>{project.desc}</p>
+        <p dangerouslySetInnerHTML={{ __html: project.desc }}></p>
 
         {/* Technologies Used */}
         <p className="portfolio__project-technologies">
