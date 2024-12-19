@@ -1,7 +1,5 @@
-import {
-  AiOutlineLinkedin
-} from "react-icons/ai";
-import { SiFiverr } from "react-icons/si";
+import { AiOutlineLinkedin } from "react-icons/ai";
+import { SiFiverr, SiGithub } from "react-icons/si";
 
 export const links = [
   { id: 1, link: "#", title: "Home" },
@@ -13,5 +11,6 @@ export const links = [
 
 export const socials = [
   { id: 1, link: "https://www.linkedin.com/in/glenntarpey/", icon: <AiOutlineLinkedin /> },
-  { id: 2, link: "https://www.fiverr.com/doctorrobot?up_rollout=true", icon: <SiFiverr /> }
+  { id: 2, link: "https://www.fiverr.com/doctorrobot?up_rollout=true", icon: <SiFiverr /> },
+  { id: 3, link: "https://github.com/Dr-StephenStrange", icon: <SiGithub /> }, 
 ];
